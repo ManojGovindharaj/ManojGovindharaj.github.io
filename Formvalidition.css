@@ -1,0 +1,98 @@
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background-attachment: fixed;
+    font-family: 'poppins' ,'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#form{
+    width: 400px;
+    margin: 10vh  auto;
+    background-color: wheat;
+    border-radius: 5px;
+    padding: 30px;
+}
+button{
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+
+    
+}
+.input-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+
+
+}
+.input-group span{
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    visibility: hidden;
+    font-size: 14px;
+    font-style: italic;
+    /* align-items: end;
+    text-align: end; */
+    
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(34,193,195);
+    position: relative;
+}
+.input-group input:focus{
+    outline: 0;
+}
+
+.input-group .error{
+     color: red;
+     font-size: 15px;
+     margin-top: 2px;
+}
+
+.input-group.success input{
+    /* border-color: green; */
+    border: 2px solid green;
+}
+
+.input-group.error input{
+    border-color: red;
+}
+.input-group.error span{
+    color: red;
+    visibility: visible;
+}
+.input-group.success i.fa-check{
+    visibility: visible;
+    color: green;
+
+}
+
+.input-group.error i.fa-triangle-exclamation{
+     visibility: visible;
+     color: red;
+}

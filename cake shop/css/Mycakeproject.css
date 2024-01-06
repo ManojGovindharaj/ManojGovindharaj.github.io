@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Mate:ital@1&family=Poppins:ital@1&family=Quicksand:wght@300&family=Roboto:wght@100&family=Seymour+One&family=Yellowtail&display=swap'); 
+
+:root{
+    --black:#1b1722;
+    --white:#f0f0f0;
+    --box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 7rem;
+   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+    
+}
+html::-webkit-scrollbar-thumb{
+    background-color: slategrey;
+    border-radius: 5rem;
+    
+}
+.container{
+    top: 0;right: 0;left: 0;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.container .logocontant{
+    display: flex;
+    align-items: center;
+}
+.container .logocontant .logo img{
+       height: 4rem;
+       opacity: 0.8;
+}
+.container .logocontant .LogoName{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.container .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(--black);
+    font-weight: bold;
+}
+.container .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+}
+.container .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+
+}
+
+.container .search{
+    display: none;
+    top: 100%;
+    margin: 1.5rem 7%;
+    background-color: transparent;
+    width: 50%;
+    right: 0;
+    height: 5rem;
+    position: absolute;
+}
+.container .search input{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: var(--white);
+    color: var(--black);
+    margin-right: 7%;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+.container .search.active{
+    display: inline-block;
+}
+#menu{
+    display: none;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/cakebg5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .homecontent{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+.home .homecontent h2{
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+    
+   
+}
+.home .homecontent p{
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+.home .homecontent .home-btn{
+    height: 3rem;
+}
+.home .homecontent .home-btn button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+.home .homecontent .home-btn button:hover{
+    font-size: 2rem;
+}
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+.product .product-row{
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+.product .product-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    
+
+    
+}
+.product .product-row .img img{
+    height: 100%;
+    width: 100%;
+}
+.product .product-row .img img:hover{
+    transform: scale(1.1);
+}
+.product .product-row .contant{
+    margin-bottom: 4rem;
+}
+.product .product-row .product-contant h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+.product .product-row .product-contant p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+.product .product-row .product-contant .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.product .product-row .product-contant .orderNow button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+.product .product-row .product-contant .orderNow button:hover{
+    font-size: 2rem;
+}
+
+.blogs{
+    background: url(../images/cake-1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.blogs .blogs-row .box{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    flex-wrap: wrap;
+}
+.blogs .blogs-row .box .img{
+    flex: 1 1 45rem;
+}
+.blogs .blogs-row .box .img img{
+    width: 100%;
+    padding: 5rem;
+}
+.blogs .blogs-row .box .contant{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.blogs .blogs-row .box .contant h3{
+    font-size: 3.5rem;
+    color: var(--black);
+    text-shadow: var(--box-shadow);
+}
+.blogs .blogs-row .box .contant p{
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.blogs .blogs-row .box .contant a{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.blogs .blogs-row .box .contant a:hover{
+     color: var(--black);
+     text-shadow: var(--box-shadow);   
+}
+.newsletter{
+    background: url(../images/cake-2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.newsletter form{
+    max-width: 45rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+.newsletter form h3{
+    font-size: 3rem;
+    color: var(--black);
+    padding-bottom: .7rem;
+}
+.newsletter form .box{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+.newsletter form .box2{
+    width: 30%;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: .5rem .5rem;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 3rem;
+}
+.review .review-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    padding: 3rem;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--box-shadow);
+}
+.review .review-row .client-review{
+    margin-bottom: 3rem;
+}
+.review .review-row .client-review p{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.review .review-row .client-info{
+    display: flex;
+    align-items: center;
+}
+.review .review-row .client-info .img{
+    padding-right: 3rem;
+}
+.review .review-row .client-info .img img{
+    width: 7rem;
+    height: 7rem;
+    clip-path: circle(50% at 50% 50%);
+}
+.review .review-row .client-info .clientDetailed{
+     font-size: 2.5rem;
+}
+.review .review-row .client-info .clientDetailed p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+.swiper-pagination-bullet{
+    background-color: var(--black);
+}
+.swiper-button-next{
+    color: var(--black);
+}
+.swiper-button-prev{
+    color: var(--black);
+}
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        padding: 1.3rem 3rem;
+    }
+    .home .homecontent{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+@media (max-width:768px){
+    #menu{
+        display: inline-block;
+    }
+    .container .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: var(--white);
+        height: 80vh;
+    }
+    .container .navbar.active{
+        right: 0;
+    }
+    .container .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+    .home .homecontent{
+        margin-left: 0;
+        width: 90%;
+    }
+}
+@media (max-width:600px)
+{
+   html{
+    font-size: 50%;
+   }
+}
+
